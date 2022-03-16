@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>Quan's portfolio</Title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body onload="setInterval(title(), 1000)">
+        <div class="wrapper">
+            <div class="header">
+                <div>
+                    <h1  id="title">Hi</h1>
+                </div>
+                <div class="scrollmain"></div>
+            </div>  
+            <div class="header">
+                <div class="personalinfo">
+                    <h1>Personal Information</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis mattis urna. Curabitur ut mollis libero. Sed eget ornare augue. Curabitur venenatis suscipit elit at scelerisque. Fusce iaculis enim a diam elementum dapibus. Cras lorem purus, lacinia et dolor non, consequat vulputate libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, turpis non ullamcorper ullamcorper, odio lorem mattis sem, aliquam dapibus risus nisl sit amet augue. Morbi in odio tempus, imperdiet dui quis, mattis tortor. Morbi fringilla urna at mollis porta. Nulla sollicitudin est risus, ut tincidunt massa aliquet vel. Praesent ut odio quis nisl molestie fringilla ac eu mi. Mauris commodo rhoncus mauris, et convallis urna luctus at.
+
+                    </p>
+                </div>
+            </div>
+            <div class="header">
+                <div class="interest">
+                    <h1>Interest </h1>
+                    <p>League of legends</p>
+                </div>
+            </div>
+                <div class="header">
+                    <div class="idealjob">
+                    <h1>Ideal Job</h1>
+                </div>
+            </div>
+                <div class="header">
+                    <div class="keyskill">
+                    <h1>Keyskill </h1>
+                </div>
+            </div>
+    </body>
+    <script>var hello = ["My Name Is", "Quan Bui", "Nice to meet you", "And welcome to my page", "Scroll down to know more about me"] 
+        function title(){
+            for(let i=0; i < hello.length;i++){
+                setInterval(document.getElementById('title').innerHTML = hello[i] , 2000)
+            }  
+        }
+    </script>
+</html>

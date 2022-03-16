@@ -1,0 +1,50 @@
+* {
+    margin: 0px;
+    font: 75% georgia, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.header {
+    scroll-snap-align: start;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-size:10em;
+    background-color: rgba(145, 160, 172, 0.5);
+}
+.wrapper{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+.scrollmain{
+    -webkit-animation: infinite scroll 1s;
+    align-self: flex-end;
+}
+@keyframes scroll {
+    10% {}
+}
+.personalinfo {
+    display: grid;
+    width: 80%;
+    place-items: start;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 50vh 20vh;
+}]
+@keyframes title {
+    20%{content: "My Name Is";}
+    40%{content: "Quan Bui"}
+    60%{content: "Nice to meet you";}
+    80%{content: "And welcome to my page"}
+    100%{content: "Scroll down to know more about me :)"}
+}
+#title {
+    animation-name: title;
+    animation-duration: 5s;
+}
+p {
+    font-size:2rem
+}
