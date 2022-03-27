@@ -6,22 +6,20 @@
 }
 .header {
     scroll-snap-align: start;
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    font-size:10em;
-    background-color: rgba(145, 160, 172, 0.5);
-}
-.wrapper{
     display: grid;
     width: 100%;
+    height: 100vh;
+    place-items: center;
+    font-size:10em;
+    background-color: rgba(145, 160, 172, 0.4);
+}
+.wrapper{
     height: 100vh;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
 }
 .scrollmain{
-    -webkit-animation: infinite scroll 1s;
+    animation: infinite scroll 1s;
     align-self: flex-end;
 }
 @keyframes scroll {
@@ -33,7 +31,7 @@
     place-items: start;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 50vh 20vh;
-}]
+}
 @keyframes title {
     20%{content: "My Name Is";}
     40%{content: "Quan Bui"}
@@ -46,5 +44,95 @@
     animation-duration: 5s;
 }
 p {
-    font-size:2rem
+    font-size:3rem
+}
+.list{
+    width: 100%;
+    display: grid;
+    place-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 40vh;
+}
+.interest {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    place-items: center;
+}
+.personality {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    place-items: center;
+}
+li {
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+    place-items: center;
+    background-color: rgba(145, 160, 172,0.6 );
+    border-radius: 1rem;
+    margin: 10px;
+}
+
+li h1 {
+    padding: 1em ;
+}
+.inth1{
+    margin-top: 10vh;
+}
+.listper{
+    width: 100%;
+    display: grid;
+    place-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 10vh;
+}   
+.center {
+    display: grid;
+    place-items: center;
+}
+.jobdesc{
+    margin: 30px;
+}
+.jobdesc p {
+    font-size: 2rem;
+}
+.idealjob   {
+    display: grid;
+    place-items: center;
+}
+.idealjob h3{
+    font-size: 20px;
+}
+.listper p {
+    font-size: 20px;
+}
+.listpor{
+    width: 100%;
+    display: grid;
+    place-content: center;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10vh;
+} 
+.listint{
+    width: 100%;
+    display: grid;
+    place-content: center;
+    grid-template-rows: 20vh 20vh 20vh;
+    margin-bottom: 10vh;
+} 
+.listint p {
+    font-size: 20px;
+}
+.listid {
+    width: 100%;
+    display: grid;
+    place-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20vh 20vh 20vh;
+    margin-bottom: 10vh;
+}
+.listid p {
+    font-size: 20px;
 }
