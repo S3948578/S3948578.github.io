@@ -119,7 +119,7 @@ li h1 {
     width: 100%;
     display: grid;
     place-content: center;
-    grid-template-rows: 20vh 20vh 20vh;
+    grid-template-rows: 30vh 30vh 30vh;
     margin-bottom: 10vh;
 } 
 .listint p {
